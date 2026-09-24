@@ -48,7 +48,7 @@ const foods = [
   },
   {
     name: "Hot Wings Bucket",
-    image: "/images/fast food.jfif",
+    image: "/images/fast%20food.jfif",
     price: 799,
     rating: 4.4,
     restaurant: "KFC",
