@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 import { useCart } from "@/components/CartProvider";
 
 const currency = new Intl.NumberFormat("en-PK", {
@@ -36,7 +34,11 @@ export default function CheckoutPage() {
               <div key={item.id} className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
                 <div className="relative h-24 w-24 overflow-hidden rounded-xl bg-slate-100">
                   {item.image && (
-                    <Image alt={item.name} className="object-cover" fill sizes="96px" src={item.image} />
+                    <img
+                      alt={item.name}
+                      className="h-full w-full object-cover"
+                      src={item.image}
+                    />
                   )}
                 </div>
 

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Minus, Plus, ShoppingBag, X } from "lucide-react";
 
@@ -94,7 +93,13 @@ export default function CartDrawer({
               {items.map((item) => (
                 <div className="flex gap-3" key={item.id}>
                   <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl bg-slate-100">
-                    {item.image && <Image alt={item.name} className="object-cover" fill sizes="80px" src={item.image} />}
+                    {item.image && (
+                      <img
+                        alt={item.name}
+                        className="h-full w-full object-cover"
+                        src={item.image}
+                      />
+                    )}
                   </div>
                   <div className="min-w-0 flex-1">
                     <h3 className="truncate font-semibold text-slate-950">{item.name}</h3>
