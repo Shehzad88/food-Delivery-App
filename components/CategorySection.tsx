@@ -23,7 +23,7 @@ const categories = [
   },
   {
     name: "Fast Food",
-    image: "/images/fast%20food.jfif",
+    image: "/images/fast-food.jfif",
   },
   {
     name: "Desserts",
