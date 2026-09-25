@@ -5,14 +5,13 @@ export default function Hero() {
   return (
     <section className="relative isolate min-h-[620px] overflow-hidden">
       <Image
-        src="/images/hero.avif"
+        src="/images/main.png"
         alt="Delicious food"
         fill
         priority
         sizes="100vw"
         className="z-0 object-cover"
       />
-      <div className="absolute inset-0 z-10 bg-black/55" />
 
       <div className="relative z-20 mx-auto flex min-h-[620px] max-w-7xl items-center px-6 py-20">
         <div className="max-w-2xl">
