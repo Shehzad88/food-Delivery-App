@@ -42,7 +42,7 @@ export default function Hero() {
         {/* Right */}
         <div>
           <Image
-            src="/images/food.jpg"
+            src="/images/hero.avif"
             alt="Delicious food"
             width={1200}
             height={900}
